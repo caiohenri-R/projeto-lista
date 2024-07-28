@@ -12,7 +12,7 @@
                 <span><strong>{{item.produto}}</strong></span>
                 <p>{{item.quantidade}}</p>
                 <div>
-                    <a href="#">Excluir</a>   
+                    <a href="#" @click.prevent="excluirProduto(index)">Excluir</a>   
                 </div>
             </div>              
        </div>
@@ -39,6 +39,10 @@ export default{
             this.produto = '';
             this.quantidade = '';
             
+         },
+         excluirProduto(posicao){
+            console.log(posicao);
+            this.lista.splice(posicao,1);
          }
      }
 }
