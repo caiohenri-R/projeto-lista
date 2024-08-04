@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="75" height="75" />
+    <!----<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="75" height="75" />-->
 
     <div class="wrapper">
       <HelloWorld msg="Sistema de Compras" />
@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">Sobre</RouterLink>
         <RouterLink to="/lista">Lista de Compra</RouterLink>
         <RouterLink to="/listaRefatorada">Lista de Compra Refatorada</RouterLink>
+        <router-link to="/testeAxios">AXIOS</router-link>
       </nav>
     </div>
   </header>
